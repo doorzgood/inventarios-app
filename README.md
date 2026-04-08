@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Inventarios App
 
 Una aplicación moderna de gestión de inventarios construida con Next.js 15, React 19, Tailwind CSS, Shadcn UI, TypeScript y integración con Supabase.
@@ -29,7 +30,7 @@ Una aplicación moderna de gestión de inventarios construida con Next.js 15, Re
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/inventarios-app.git
+git clone https://github.com/doorzgood/inventarios-app.git
 cd inventarios-app
 ```
 
@@ -44,9 +45,59 @@ npm install
 Crear archivo `.env.local` en la raíz del proyecto:
 
 ```env
-NEXT_PUBLIC_SUPABASE_URL=tu_supabase_url
+NEXT_PUBLIC_SUPABASE_URL=https://uprdydrorntlwcluwzza.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=tu_supabase_key
 ```
+
+## 🏃 Ejecutar la aplicación
+
+### Desarrollo
+
+```bash
+npm run dev
+```
+
+### Producción
+
+```bash
+npm run build
+npm start
+```
+
+## 📊 Funcionalidades
+
+### Dashboard
+- Estadísticas generales (productos totales, stock bajo, valor total, categorías)
+- Accesos rápidos a funciones principales
+
+### Gestión de Productos
+- Lista de productos con paginación
+- Agregar, editar y eliminar productos
+- Campos: nombre, descripción, SKU, cantidad, precio, categoría
+
+### Gestión de Categorías
+- Lista de categorías
+- Agregar, editar y eliminar categorías
+- Campos: nombre, descripción
+
+## 🔧 Configuración de Supabase
+
+1. Crear proyecto en [Supabase](https://supabase.com)
+2. Ejecutar el SQL del archivo `SUPABASE_SETUP.md`
+3. Configurar políticas RLS
+4. Actualizar `.env.local` con las credenciales
+
+## 📝 Próximos Pasos
+
+- [ ] Crear repositorio en GitHub
+- [ ] Desplegar en Vercel
+- [ ] Agregar autenticación de usuarios
+- [ ] Implementar búsqueda y filtros
+- [ ] Agregar exportación de datos
+
+## 📄 Licencia
+
+Este proyecto es de uso personal/educativo.
 
 ## 🏃 Ejecutar la aplicación
 
@@ -124,3 +175,6 @@ Las contribuciones son bienvenidas. Por favor:
 
 Este proyecto está bajo la licencia MIT.
 
+=======
+# inventarios-app
+>>>>>>> 89b26bd68ef233afb04febc11bf081f7676551c0
