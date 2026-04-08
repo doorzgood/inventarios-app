@@ -36,12 +36,14 @@ export function CategoryDialog({ onSubmit, category }: CategoryDialogProps) {
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger asChild>
-        <button className="inline-flex items-center justify-center gap-2 rounded-md bg-black text-white px-4 py-2 text-sm font-medium hover:bg-gray-900">
-          <Plus className="h-4 w-4" />
-          {category ? 'Editar' : 'Nueva Categoría'}
-        </button>
-      </DialogTrigger>
+      <button
+        type="button"
+        onClick={() => setOpen(true)}
+        className="inline-flex items-center justify-center gap-2 rounded-md bg-black text-white px-4 py-2 text-sm font-medium hover:bg-gray-900"
+      >
+        <Plus className="h-4 w-4" />
+        {category ? 'Editar' : 'Nueva Categoría'}
+      </button>
       <DialogContent>
         <DialogHeader>
           <DialogTitle>

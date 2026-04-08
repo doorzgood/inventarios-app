@@ -41,12 +41,14 @@ export function ProductDialog({
 
   return (
     <Dialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger asChild>
-        <button className="inline-flex items-center justify-center gap-2 rounded-md bg-black text-white px-4 py-2 text-sm font-medium hover:bg-gray-900">
-          <Plus className="h-4 w-4" />
-          {product ? 'Editar' : 'Nuevo Producto'}
-        </button>
-      </DialogTrigger>
+      <button
+        type="button"
+        onClick={() => setOpen(true)}
+        className="inline-flex items-center justify-center gap-2 rounded-md bg-black text-white px-4 py-2 text-sm font-medium hover:bg-gray-900"
+      >
+        <Plus className="h-4 w-4" />
+        {product ? 'Editar' : 'Nuevo Producto'}
+      </button>
       <DialogContent>
         <DialogHeader>
           <DialogTitle>

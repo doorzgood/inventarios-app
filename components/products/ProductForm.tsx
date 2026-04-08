@@ -43,7 +43,9 @@ export function ProductForm({
     }));
   };
 
-  const handleCategoryChange = (value: string) => {
+  const handleCategoryChange = (value: string | null, _eventDetails?: unknown) => {
+    if (!value) return;
+
     setFormData((prev) => ({
       ...prev,
       categoryId: value,
